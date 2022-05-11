@@ -1,0 +1,213 @@
+/* 모바일 환경이 아닐 때 */
+@media (min-width: 768px) {
+  .frame {
+    width: 412px;
+  }
+  .HeaderScroll,
+  .HeaderOpacity {
+    width: 412px;
+    left: auto !important;
+    right: auto !important;
+  }
+
+  .Header {
+    width: 412px;
+    left: auto !important;
+    right: auto !important;
+  }
+}
+
+.menubar {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.menuSpaceBox {
+  height: 78px;
+  /* background-color: #4E7565; */
+}
+.Header {
+  /* padding-top: 14px; */
+  background-color: #ffffff;
+  /* padding-bottom: 14px; */
+  font-size: 24px;
+  line-height: 28.8px;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.Header a {
+  text-decoration: none;
+  color: #111111;
+  font-weight: 700;
+}
+.HeaderTop img {
+  width: 82.27px;
+}
+.HeaderTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 34px;
+  padding-right: 34px;
+  /* background-color: aqua; */
+}
+
+.HeaderScroll {
+  /* padding-top: 14px; */
+  font-size: 24px;
+  line-height: 28.8px;
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.HeaderOpacity {
+  /* padding-top: 14px; */
+  /* padding-bottom: 14px; */
+  font-size: 24px;
+  line-height: 28.8px;
+  position: fixed;
+  background-color: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.MenuBtn {
+  width: 24px;
+  height: 20px;
+  padding: 13px;
+  /* background-color: aqua; */
+}
+.NavMenu {
+  display: none;
+}
+.NavMenuActive {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  box-shadow: 0px 4px 2px -2px rgba(219, 219, 219, 0.25);
+  background-color: #ffffff;
+  animation: fadeInDown 0.5s;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.NavItem {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 34px;
+  font-family: "Pretendard-Black";
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+}
+.bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 7px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4c966e;
+}
+.hamburger {
+  display: block;
+  width: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+.navActive {
+  color: #4c966e !important;
+  text-decoration: none;
+}
+.nav {
+  color: black;
+  text-decoration: none;
+}
+
+.FesLogoLink {
+  display: flex;
+}
+
+.Content {
+  /* 태영: 영역 구분위해 수정함 */
+  background-color: #f6f5f1;
+  /* background-color: lightblue; */
+  /* padding-left: 34px;
+  padding-right: 34px; */
+  /* padding-top:28px; */
+}
+
+.FooterMenu {
+  padding: 34px;
+  text-align: left;
+  background-color: #4e7565;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.F_Head {
+  margin-bottom: 22px;
+  font-family: "Pretendard-Bold";
+  font-weight: 700;
+  font-size: 14px;
+}
+.FooterContent1,
+.FooterContent2 {
+  display: flex;
+  font-family: "Pretendard-Medium";
+}
+.F_Header {
+  width: 53px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-family: "Pretendard-Bold";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+.name {
+  color: #acc7b8;
+  margin-bottom: 5px;
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.FooterContent2 {
+  margin-top: 11px;
+}
+
+.AdBanner img {
+  width: 100%;
+}
