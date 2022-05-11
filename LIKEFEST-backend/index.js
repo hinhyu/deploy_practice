@@ -8,6 +8,9 @@ app.use(cors());
 
 const db = require('./models');
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
 //라우터
 const boardRouter = require('./routes/Board');
 const noticeRouter = require('./routes/Notice');
