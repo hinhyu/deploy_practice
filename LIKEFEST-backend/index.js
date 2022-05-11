@@ -1,10 +1,18 @@
+const http=require('http');
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const server = createServer(app);
 //const bodyParser = require('body-Parser');
+const PORT = 3001;
+
+let corsOptions = {
+    origin : "http://3.39.123.152",
+    credentials: true
+};
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 const db = require('./models');
 
@@ -22,8 +30,8 @@ app.use("/notice", noticeRouter);
 
 app.use(cors())
 db.sequelize.sync().then(() => {
-    app.listen(3001, () => {
-        console.log("Server Running on Port 3001");
+    server.listen(PORT, () => {
+        console.log(`Server running on ${PORT}`);
     });
 });
 

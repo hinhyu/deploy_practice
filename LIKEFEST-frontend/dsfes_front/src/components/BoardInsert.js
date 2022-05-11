@@ -35,7 +35,7 @@ const BoardInsert = ({ texts, changeTexts }) => {
     (e) => {
       e.preventDefault();
       axios
-        .post("http://localhost:3001/board", {
+        .post("http://3.39.123.152/board", {
           boText: text,
         })
         .then((res) => {
